@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF1FA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Ảnh sinh viên -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/avatar"
+            android:paddingTop="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#2196F3"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Thông tin sinh viên -->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên: Võ Văn Nhất Huy\nTrường: HCMUTE\nNgành: An toàn thông tin\nSĐT: 0862003914\nMail: 23162032@student.hcmute.edu.vn"
+            android:textAlignment="center"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- ===== CÂU 4 ===== -->
+        <TextView
+            android:text="Câu 4: Viết chương trình nhập 01 mảng ArrayList kiểu số và in ra Log.d các số lẻ và số chẵn riêng biệt có trong mảng."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="(Kết quả sẽ hiển thị trực tiếp bên dưới)"
+            android:textSize="13sp"
+            android:textColor="#555"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtArrayInput"
+            android:hint="Nhập các số cách nhau bằng dấu phẩy (,)"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnXuLyCau4"
+            android:text="Xử lý mảng"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvKetQuaCau4"
+            android:text="Kết quả sẽ hiển thị ở đây"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===== CÂU 5 ===== -->
+        <TextView
+            android:text="Câu 5: Viết chương trình nhập 01 chuỗi ký tự bất kỳ từ View (EditText) và in ra View (TextView), đồng thời in ra Toast chuỗi đó đảo ngược và in hoa."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:hint="Nhập chuỗi ký tự bất kỳ"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnProcess"
+            android:text="Xử lý chuỗi"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:text="Kết quả sẽ hiển thị ở đây"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
